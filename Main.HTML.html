@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media</title>
+<style>
+.header{
+    height: 150px;
+    color:wheat;
+    background-color:tomato;
+    font-size:50px;
+    text-align: center;
+    top:0px;
+}
+
+input[type=text], input[type=password]{
+    border-radius: 25px;
+    padding:10px;
+}
+
+
+
+.cate{
+    text-align: center;
+    background-color:cornflowerblue;
+    font-size:36pt;
+}
+
+a:hover{
+    text-decoration: none;
+    font-size:45px;
+    background:yellowgreen;
+    color:lightslategrey;
+}
+
+p{
+    color:white;
+    padding:25px;
+    margin:30px;
+    border:3px solid violet;
+    text-align: center;
+}
+
+form{
+    color:white;
+    background-color: sienna;
+}
+
+iframe,video{
+    width:200px;
+    height:200px;
+}
+
+img{position: absolute;left:100px}
+
+audio{width:200px}
+
+</style>
+</head>
+<body style="background-color: white;font-family: Bradley Hand ITC;">
+<div class="header">
+<img width="60px" height="60px" alt="Youtube" src="data:image/png;base64,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">
+
+<h3>Youtube</h3>
+</div><a href="file:///C:/Users/Mati/OneDrive/Documents/Masi%20html%20codes/Masi%20html%20codes/form.html">SIGN IN</a></fieldset>
+</div><br><br>
+<div class="cate">Videos from YouTube</div>
+<table>
+<tr>
+<td >
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="HTML Tutorial for Beginners: HTML Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/uxz_6GTLKyE" title="Pink Panther Versus Ants | 35-Minute Compilation | The Pink Panther Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="HTML Full Course - Build a Website Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/fJEbVCrEMSE" title="Visual Studio Code 2022 | Web Dev Setup | Top Extensions, Themes, Settings, Tips & Tricks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/b9gWCCLJPtM" title="Rat-A-Tat|'Chef Don And More Cartoons for Children'|Chotoonz Kids Funny Cartoon Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/K6tWKQjEDnY" title="Rat-A-Tat |'Little Dogs The Mystery Guests More Cartoons'| Chotoonz Kids Funny Cartoon Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+</tr>
+<tr>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/t2QaH5Mcmlc" title="Rat-A-Tat |'Don And Pals Cartoons for Children| Chotoonz Kids Funny Cartoon Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td >
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/T9u3ChTE79Y" title="RAT-A-TAT  | Chotoonz Kids Cartoon Videos | PAINT JOB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td >
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/ujUathrcp6U" title="Oggy and the Cockroaches 💀 OGGY HEAD CHEF (S01E49) New Episodes in HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td >
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/8eGMyVoGFpE" title="Oggy and the Cockroaches - Globulopolis (S01E33) Full Episode in HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td >
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/Pj1eq6Opj7g" title="Oggy et les Cafards - Bonhomme de Neige (S04e65) Episode complet en HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/rkDXhLthNbQ" title="Oggy et les cafards - Zmen à la rescousse (S05EP63)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+</tr>
+</table>
+<div class="cate">My videos</div>
+<table>
+<tr>
+<td>
+
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/c4IstoV4KvI" title="Oggy and the Cockroaches 😲⛅️ HEAD IN THE CLOUDS (S05E74) New Episodes in HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+<td>
+
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/K2GdmjjYCF0" title="Oggy and the Cockroaches 🏢💥 EXPLOSION ON TOWN 🏢💥 Full Episode in HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+<td>
+
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/a3dR139suls" title="Oggy and the Cockroaches 💰 IMPULSE BUY ( SEASON 4 ) 💵 Cartoon Compilation for Kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+<td>
+
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/H_fR5YsVhrY" title="Oggy und die Kakerlaken 🖍 Zieh mein Leben 🖍 Volledige aflevering in HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+<td>
+
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/bmqeZL03bA4" title="Oggy and the Cockroaches 😱 OGGY'S NEW COLOR ! 🌈 🖌 Full Episodes HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+<td>
+
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/K9OCxdDnLxw" title="Rat-A-Tat |'Fine Dine Vs Cooking Catastrophe 1Hour Food Special'| Chotoonz Kids Funny Cartoon Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+</tr>
+<tr>
+<td>
+ 
+    <iframe width="1077" height="606" src="https://www.youtube.com/embed/MzsDeJbhums" title="RAT-A-TAT  | Chotoonz Kids Cartoon Videos | FREQUENT FLYER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</td>
+<td>
+   
+        <iframe width="1077" height="606" src="https://www.youtube.com/embed/T9u3ChTE79Y" title="RAT-A-TAT  | Chotoonz Kids Cartoon Videos | PAINT JOB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+</td>
+<td>
+    
+        <iframe width="1077" height="606" src="https://www.youtube.com/embed/0QeTFWfjQyc" title="Rat-A-Tat |'Cat Alien And More Cartoons for Children  58 Minute'| Chotoonz Kids Funny Cartoon Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+</td>
+<td>
+    
+        <iframe width="1077" height="606" src="https://www.youtube.com/embed/ok-plXXHlWw" title="HTML in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+</td>
+<td>
+    
+        <iframe width="1077" height="606" src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="Python Tutorial - Python Full Course for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+</td>
+<td>
+    
+        <iframe width="1077" height="606" src="https://www.youtube.com/embed/jS4aFq5-91M" title="JavaScript Programming - Full Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+</td>
+</tr>
+</table>
+<div class="cate">Music</div>
+<table>
+<tr>
+<td>
+    <audio controls>
+        <source type="audio/mp3" src="Hoofbeatiframe width="1077" height="606" src="https://www.youtube.com/embed/uxz_6GTLKyE" title="Pink Panther Versus Ants | 35-Minute Compilation | The Pink Panther Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
+    </audio>
+</td>
+<td>
+    <audio controls>
+        <source type="audio/mp3" src="Audio1.mp3">
+    </audio>
+</td>
+<td>
+    <audio controls>
+        <source type="audio/mp3" src="Audio2.mp3">
+    </audio>
+</td>
+<td>
+    <audio controls>
+        <source type="audio/mp3" src="Audio3.mp3">
+    </audio>
+</td>
+<td>
+    <audio controls>
+        <source type="audio/mp3" src="Audio4.mp3">
+    </audio>
+</td>
+<td>
+    <audio controls>
+        <source type="audio/mp3" src="Audio5.mp3">
+    </audio>
+</td>
+</tr>
+<tr>
+    <td>
+        <audio controls>
+            <source type="audio/mp3" src="Audio6.mp3">
+        </audio>
+    </td>
+
+    <td>
+        <audio controls>
+            <source type="audio/mp3" src="Audio7.mp3">
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+            <source type="audio/mp3" src="Audio8.mp3">
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+            <source type="audio/mp3" src="Audio9.mp3">
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+            <source type="audio/mp3" src="Audio10.mp3">
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+            <source type="audio/mp3" src="Audio11.mp3">
+        </audio>
+    </td>
+</tr>
+</table>
+<p>If you are admin </p>
+<button type="botton" class="block">Buy</button>
+<form><fieldset>
+<label>Username:</label>
+<input type="text" id="usr" required><br>
+<label>Password:</label>
+<input type="password" id="psw" required><br>
+<Input value="Submit" type="submit">
+</fieldset></form>
+<span style="color:wheat">Requirements for adding your video</span>
+<ul style="color:snow">
+<LI>Length of video should be above 5 minutes.</LI>
+<li>The video should be original.</li>
+<li>It should be good quality</li>
+</ul>
+</body>
+</html>
